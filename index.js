@@ -1,20 +1,20 @@
 // Code your solution in this file!
-function distanceFromHqInBlocks (distance) {
-  if (distance === 43) {
-    return 1;
+function distanceFromHqInBlocks(streetNumber) {
+  if (streetNumber > 42) {
+    return streetNumber - 42;
   } else {
-    return 8;
+    return 42 - streetNumber;
   }
 }
 
-function distanceFromHqInFeet (distance) {
-  return distanceFromHqInBlocks (distance) * 264;
+function distanceFromHqInFeet(streetNumber) {
+  return distanceFromHqInBlocks(streetNumber) * 264;
 }
 
-function distanceTravelledInFeet (start, end)) {
+function distanceTravelledInFeet(start, end) {
   if (start > end) {
-    return (start - end) * 264;
+    return (start - end) * 264
   } else {
-    return (end - start) * 264;
+    return (end - start) * 264
   }
 }
